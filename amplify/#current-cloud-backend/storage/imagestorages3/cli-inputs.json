@@ -1,0 +1,14 @@
+{
+  "resourceName": "imagestorages3",
+  "policyUUID": "c6864a52",
+  "bucketName": "imagerecognitionaws",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

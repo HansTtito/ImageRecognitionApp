@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-imagerecognitionaws-dev-846ff-authRole",
+      "UnauthRoleArn": "arn:aws:iam::720081910880:role/amplify-imagerecognitionaws-dev-846ff-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::720081910880:role/amplify-imagerecognitionaws-dev-846ff-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-imagerecognitionaws-dev-846ff-deployment",
+      "UnauthRoleName": "amplify-imagerecognitionaws-dev-846ff-unauthRole",
+      "StackName": "amplify-imagerecognitionaws-dev-846ff",
+      "StackId": "arn:aws:cloudformation:us-east-1:720081910880:stack/amplify-imagerecognitionaws-dev-846ff/005a03d0-a338-11ef-858f-1249733b6fad",
+      "AmplifyAppId": "d3lxlzyy0qfso1"
+    },
+    "categories": {
+      "auth": {
+        "imagerecognitionaws3777f97e": {}
+      },
+      "storage": {
+        "imagestorages3": {}
+      }
+    }
+  }
+}

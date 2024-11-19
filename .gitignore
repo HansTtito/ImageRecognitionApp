@@ -1,0 +1,12 @@
+# Ignorar carpetas y archivos generados por Flutter
+build/
+.dart_tool/
+.idea/
+*.iml
+
+# Ignorar archivos de configuración específicos de Flutter
+pubspec.lock
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

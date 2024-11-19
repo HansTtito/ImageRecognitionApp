@@ -1,0 +1,77 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-imagerecognitionaws-dev-846ff-authRole",
+      "UnauthRoleArn": "arn:aws:iam::720081910880:role/amplify-imagerecognitionaws-dev-846ff-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::720081910880:role/amplify-imagerecognitionaws-dev-846ff-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-imagerecognitionaws-dev-846ff-deployment",
+      "UnauthRoleName": "amplify-imagerecognitionaws-dev-846ff-unauthRole",
+      "StackName": "amplify-imagerecognitionaws-dev-846ff",
+      "StackId": "arn:aws:cloudformation:us-east-1:720081910880:stack/amplify-imagerecognitionaws-dev-846ff/005a03d0-a338-11ef-858f-1249733b6fad",
+      "AmplifyAppId": "d3lxlzyy0qfso1"
+    }
+  },
+  "auth": {
+    "imagerecognitionaws3777f97e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-imagerecognitionaws-dev-846ff-deployment/amplify-cfn-templates/auth/imagerecognitionaws3777f97e-cloudformation-template.json",
+        "logicalId": "authimagerecognitionaws3777f97e"
+      },
+      "lastPushTimeStamp": "2024-11-16T05:09:58.278Z",
+      "output": {
+        "UserPoolId": "us-east-1_GKhYeKHxi",
+        "AppClientIDWeb": "4ugcttkm034ftscq2oue1tgojk",
+        "AppClientID": "2s83ibpo16kdur8jselb6ab7hb",
+        "IdentityPoolId": "us-east-1:0dbdbd1e-f289-419b-974d-a598aa8cbb92",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:720081910880:userpool/us-east-1_GKhYeKHxi",
+        "IdentityPoolName": "imagerecognitionaws3777f97e_identitypool_3777f97e__dev",
+        "UserPoolName": "imagerecognitionaws3777f97e_userpool_3777f97e",
+        "HostedUIDomain": "imagerecognition152-122a-dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"imagerecognition://\"],\"LogoutURLs\":[\"imagerecognition://\"]}"
+      },
+      "lastPushDirHash": "MSmFWk4A3bGjF2aXPg4C1Nks+vU="
+    }
+  },
+  "storage": {
+    "imagestorages3": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2024-11-16T05:09:59.429Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-imagerecognitionaws-dev-846ff-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageimagestorages3"
+      },
+      "output": {
+        "BucketName": "imagerecognitionaws846ff-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "6Few1Vi15VMll83FTJj08n9sQ6Y="
+    }
+  }
+}
