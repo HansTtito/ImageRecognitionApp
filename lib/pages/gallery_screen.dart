@@ -118,15 +118,27 @@ class _GalleryScreenState extends State<GalleryScreen> {
 
   Future<void> _deleteFolder(int index) async {
     try {
-      await _folderHandlerService.deleteFolder(
-        context: context,
-        email: widget.email!,
-        folderName: folders[index].name,
-        subject: 'Galeria',
-        onFolderDeleted: () {
-          setState(() => folders.removeAt(index));
-        },
-      );
+      // Ejecutar ambas eliminaciones en paralelo
+      await Future.wait([
+        _folderHandlerService.deleteFolder(
+          context: context,
+          email: widget.email!,
+          folderName: folders[index].name,
+          subject: 'Galeria',
+          onFolderDeleted: () {
+            setState(() => folders.removeAt(index));
+          },
+        ),
+        _folderHandlerService.deleteFolder(
+          context: context,
+          email: widget.email!,
+          folderName: folders[index].name,
+          subject: 'Modelo',
+          onFolderDeleted: () {
+            setState(() => folders.removeAt(index));
+          },
+        ),
+      ]);
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
@@ -135,6 +147,7 @@ class _GalleryScreenState extends State<GalleryScreen> {
       }
     }
   }
+
 
   void _updateImagesInFolder(int index, List<CustomImageInfo> updatedImages) {
     _folderHandlerService.updateImagesInFolder(

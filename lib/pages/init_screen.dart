@@ -118,15 +118,15 @@ class _InitScreenState extends State<InitScreen> {
               items: const [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.person_2_sharp),
-                  label: 'User',
+                  label: 'Usuario',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.photo),
-                  label: 'Choose Photos',
+                  label: 'Sube Fotos',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.camera_alt),
-                  label: 'Image Recognition',
+                  label: 'Modelo',
                 ),
               ],
             ),
